@@ -5,9 +5,103 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins',sans-serif;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+nav{
+  height: 100px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0,0,0,0.1);
+
+}
+
+
+section{
+  padding: 20px;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--photo{
+  max-width: 1100px;
+  align-self: center;
+}
+.hero--header{
+  margin-bottom: 16px;
+}
+.hero-text{
+  margin-top: 0px;
+}
+.cards-list{
+   display: flex;
+   flex-direction: row;
+   max-width: 1009;
+   position: relative;
+   overflow:inherit;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.card{
+  margin: 0 10px;
+  margin-left: 20px;
+  object-fit: cover;
+  position: relative;
+   /*max-width: 105px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; */
+
+}
+
+.card--image{
+  width: 100%;
+  display: inherit;
+  width: 300px; 
+  border-radius: 9px; 
+}
+.card--stats{
+  display: flex;
+  align-items: center;
+}
+
+.card--star{
+
+  height: 20px;
+}
+.grey{
+  color:gray;
+}
+.bold{
+  font-weight: bold;
+}
+
+.card--badge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.button1{
+  background-color: yellow;
 }
